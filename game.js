@@ -4,7 +4,7 @@
 
 //Background
 var frame1 = createSprite(200,200);
-frame1.setAnimation("forest3.jpg_1");
+frame1.setAnimation("forest1");
 frame1.scale=1.15;
 
 //Wizard
@@ -13,12 +13,12 @@ hero.setAnimation("idle");
 hero.scale=0.8;
 
 var monster = createSprite(400,50);
-monster.setAnimation("mon1.png_1");
+monster.setAnimation("monster1");
 monster.scale=0.6;
 monster.velocityX=-5;
 
 var monster2=createSprite(400,360);
-monster2.setAnimation("mushroom1.png_1");
+monster2.setAnimation("monster2");
 monster2.scale=1.8;
 monster2.velocityX=-3;
 
@@ -30,7 +30,7 @@ monster3.velocityY=5;
 monster3.visible=false;
 
 var coin = createSprite(200,80);
-coin.setAnimation("coin_gold_1");
+coin.setAnimation("coin");
 coin.scale=0.3;
 
 //Walk
@@ -78,7 +78,7 @@ function drawScreen1(){
   //Background
   frame1.x=200;
   frame1.y=200;
-  frame1.setAnimation("tittlescreen.jpg_1");
+  frame1.setAnimation("title_screen");
   frame1.scale=1;
   //Wizard
   hero.x=-35;
@@ -87,13 +87,13 @@ function drawScreen1(){
 
   monster.x=-400;
   monster.y=-50;
-  monster.setAnimation("mon1.png_1");
+  monster.setAnimation("monster1");
   monster.scale=0.6;
   monster.velocityX=0;
 
   monster2.x=-400;
   monster2.y=-360;
-  monster2.setAnimation("mushroom1.png_1");
+  monster2.setAnimation("monster2");
   monster2.scale=1.8;
   monster2.velocityX=0;
   
@@ -107,7 +107,7 @@ function drawScreen1(){
 
   coin.x=-200;
   coin.y=-80;
-  coin.setAnimation("coin_gold_1");
+  coin.setAnimation("coin");
   coin.scale=0.3;
 
   walk=0;
@@ -132,7 +132,7 @@ function drawScreen2(){
 function activatePieces(){
   frame1.x=200;
   frame1.y=200;
-  frame1.setAnimation("forest3.jpg_1");
+  frame1.setAnimation("forest1");
   frame1.scale=1.15;
 
   hero.x=35;
@@ -141,13 +141,13 @@ function activatePieces(){
 
   monster.x=400;
   monster.y=50;
-  monster.setAnimation("mon1.png_1");
+  monster.setAnimation("monster1");
   monster.scale=0.6;
   monster.velocityX=-5;
 
   monster2.x=400;
   monster2.y=360;
-  monster2.setAnimation("mushroom1.png_1");
+  monster2.setAnimation("monster2");
   monster2.scale=1.8;
   monster2.velocityX=-3;
   
@@ -161,7 +161,7 @@ function activatePieces(){
 
   coin.x=200;
   coin.y=80;
-  coin.setAnimation("coin_gold_1");
+  coin.setAnimation("coin");
   coin.scale=0.3;
 
   walk=0;
@@ -260,11 +260,11 @@ if(hero.y>=352){
  //Scrolling
  if (hero.x >= 400) {
     if (background == 1){
-      frame1.setAnimation("forest3.jpg_2");
+      frame1.setAnimation("forest2");
       frame1.scale=1.23;
       background = 2;
     } else {
-      frame1.setAnimation("forest3.jpg_1");
+      frame1.setAnimation("forest1");
       background = 1;
     }
     hero.x = 0;
